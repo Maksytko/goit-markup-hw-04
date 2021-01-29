@@ -46,21 +46,39 @@ body {
 }
 
 .address-mail {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: #757575;
+  align-items: center;
+}
+
+.address-mail > svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
 }
 
 .address-tel {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: #757575;
+  justify-content: center;
+}
+
+.address-tel > svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
 }
 
 header a {
@@ -70,6 +88,11 @@ header a {
 .address-react:focus,
 .address-react:hover {
   color: #2196f3;
+}
+
+.address-react:focus .svg-react,
+.address-react:hover .svg-react {
+  fill: #2196f3;
 }
 
 header {
@@ -188,6 +211,12 @@ header {
 .advantages-list-item {
   margin: 15px;
 }
+
+.advantages-list-item > svg {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 55px;
+}
 /* ================== END ADVANTAGES ================== */
 
 /* ================== COMPONENTS ================== */
@@ -267,6 +296,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 15px;
 }
 
 .members-list-item {
@@ -291,6 +321,36 @@ header {
 
 .members-inf {
   padding: 30px 55px;
+}
+
+.social-item-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item-link:hover,
+.social-item-link:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+.social-item-link:hover .social-icon,
+.social-item-link:focus .social-icon {
+  fill: #ffffff;
+}
+
+.social-item-link > svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
 }
 /* ================== END TEAM ================== */
 
