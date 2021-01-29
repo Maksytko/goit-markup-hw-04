@@ -320,13 +320,13 @@ header {
 }
 
 .members-inf {
-  padding: 30px 55px;
+  padding: 30px 30px;
 }
 
 .social-item-link {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 45px;
+  height: 45px;
   justify-content: center;
   align-items: center;
 }
@@ -350,9 +350,16 @@ header {
 
 .social-list {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 /* ================== END TEAM ================== */
+
+/* ================== CLIENTS ================== */
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+/* ================== END CLIENTS ================== */
 
 /* ================== FOOTER ================== */
 .address-footer-address {
@@ -389,6 +396,57 @@ footer {
 
 footer a {
   color: #ffffff;
+}
+
+.footer-text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.social-footer-list {
+  display: flex;
+}
+
+.social-footer-item-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.social-footer-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-footer-item-link > svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.social-footer-item-link:focus,
+.social-footer-item-link:hover {
+  background-color: #2196f3;
+}
+
+.footer-list {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-links {
+  padding-top: 12px;
+  margin-left: 70px;
 }
 
 /* ================== END FOOTER ================== */
@@ -472,5 +530,4 @@ footer a {
 .portfolio-list-title {
   margin-bottom: 5px;
 }
-
 /* ================== END PORTFOLIO ================== */ ;
