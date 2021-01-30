@@ -216,15 +216,22 @@ header {
 }
 
 .advantages-list-item {
-  display: flex;
   margin: 15px;
-  flex-direction: column;
 }
 
-.advantages-list-item > svg {
+.advantages-item-bg {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.advantages-item-bg > svg {
   width: 70px;
   height: 70px;
-  margin-bottom: 55px;
+  /* margin-bottom: 55px; */
   align-self: center;
 }
 /* ================== END ADVANTAGES ================== */
@@ -327,6 +334,7 @@ header {
 
 .members-list-item {
   margin: 15px;
+  background-color: #ffffff;
 }
 
 .members-inf {
@@ -581,11 +589,15 @@ footer a {
   flex-wrap: wrap;
 }
 
-.portfolio-list-item {
+/* .portfolio-list-item {
   margin: 15px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   width: 370px;
+} */
+
+.portfolio-list-item-link > img {
+  width: 100%;
 }
 
 .portfolio-inf {
@@ -599,9 +611,14 @@ footer a {
 .portfolio-list-item-link {
   display: flex;
   flex-direction: column;
+  margin: 15px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  width: 370px;
 }
 
-.portfolio-list-item-link:hover {
+.portfolio-list-item-link:hover,
+.portfolio-list-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
